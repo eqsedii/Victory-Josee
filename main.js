@@ -1,6 +1,8 @@
 (function(){
 var $=function(s,r){return (r||document).querySelector(s)},$$=function(s,r){return [].slice.call((r||document).querySelectorAll(s))};
 var WA='254798830636';
+// MODE TECHS KENYA contact number, international format without + (e.g. 2547XXXXXXXX)
+var DEV='';
 
 // loader (first visit per session)
 var ld=$('#loader');
@@ -44,5 +46,9 @@ if(f)f.addEventListener('submit',function(e){e.preventDefault();var d=new FormDa
 var m='Hello Victory Electronics, I need help.%0AName: '+enc(d.get('name'))+'%0ADevice: '+enc(d.get('device'))+'%0AProblem: '+enc(d.get('issue'))+'%0AService: '+enc(d.get('type'));
 window.open('https://wa.me/'+WA+'?text='+m,'_blank','noopener')});
 function enc(v){return encodeURIComponent(v||'-')}
+var dl=$('#devlink'),dm=$('#devm');
+if(dl&&dm){dl.addEventListener('click',function(){if(!DEV)return;$('#devcall').href='tel:+'+DEV;$('#devwa').href='https://wa.me/'+DEV+'?text='+encodeURIComponent('Hello MODE TECHS KENYA, I saw your work on the Victory Electronics website.');dm.classList.add('on')});
+dm.addEventListener('click',function(e){if(e.target===dm||e.target.id==='devx')dm.classList.remove('on')});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')dm.classList.remove('on')})}
 var y=$('#yr');if(y)y.textContent=new Date().getFullYear();
 })();
