@@ -189,3 +189,10 @@ a[href^="tel"].btn::after{content:"";position:absolute;inset:0;border-radius:999
 .open{display:inline-flex;align-items:center;gap:.5rem;font-weight:900;color:#0e7a3a}
 .open i{width:11px;height:11px;border-radius:50%;background:var(--wa);box-shadow:0 0 0 0 rgba(37,211,102,.7);animation:livedot 1.6s infinite}
 @keyframes livedot{to{box-shadow:0 0 0 12px rgba(37,211,102,0)}}
+
+.gotv{width:150px;margin:1rem 0 0;mix-blend-mode:multiply}
+.expert{background:radial-gradient(circle at 78% 40%,rgba(246,185,11,.4),transparent 55%),linear-gradient(120deg,var(--navy2),var(--navy));color:#fff;overflow:hidden}
+.expert h2{color:#fff}.expert .lead{color:#d5e0ff}
+.person{position:relative;max-width:340px;margin:0 auto;animation:bob 5s ease-in-out infinite}
+.person>img:first-child{width:100%;border:4px solid var(--gold);border-radius:6px 64px 6px 64px;box-shadow:0 0 0 8px rgba(255,255,255,.1),0 24px 50px rgba(0,0,0,.5)}
+.person .badge{position:absolute;left:-22px;bottom:34px;width:84px;height:84px;background:var(--cream);border-radius:50%;padding:8px;border:3px solid var(--gold);mix-blend-mode:normal;animation:spin 14s linear infinite}

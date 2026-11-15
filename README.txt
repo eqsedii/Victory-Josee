@@ -6,4 +6,4 @@ UPLOAD TO GITHUB (Victory-Josee):
 3. Commit. Then Settings > Pages > Deploy from branch > main > / (root).
 Your site goes live at https://<your-username>.github.io/Victory-Josee/
 
-EDIT LATER: phone/WhatsApp number is in every .html file and main.js (search 0798 / 254798830636).
+EDIT LATER: phone/WhatsApp number is in every .html file and main.js (search 0798 / 254798830636). Domain: victoryrepairandspares.co.ke (see CNAME file).
