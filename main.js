@@ -2,7 +2,7 @@
 var $=function(s,r){return (r||document).querySelector(s)},$$=function(s,r){return [].slice.call((r||document).querySelectorAll(s))};
 var WA='254798830636';
 // MODE TECHS KENYA contact number, international format without + (e.g. 2547XXXXXXXX)
-var DEV='';
+var DEV='254141116200';
 
 // loader (first visit per session)
 var ld=$('#loader');
